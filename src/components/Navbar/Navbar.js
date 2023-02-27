@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function navbar() {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-light ">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
 
         <a class="navbar-brand pl-2" href="#">
           <img src={Logo} height="auto" width="161px" style={{ margin: "-3rem" }} alt="magva logo" />
