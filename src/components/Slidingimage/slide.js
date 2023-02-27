@@ -13,49 +13,49 @@ import Mens7 from "../../assets/picture6.png"
 
 export default function slide() {
   return (
-<div id="carouselExampleInterval" class="carousel slide" data-mdb-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-mdb-interval="5">
-      <img src={Mens} class="d-block w-100"
+<div id="carouselExampleInterval" className="carousel slide" data-mdb-ride="carousel">
+  <div className="carousel-inner">
+    <div className="carousel-item active" data-mdb-interval="5">
+      <img src={Mens} className="d-block w-100"
         alt="#" style={{height:"400px"}} />
     </div>
-    <div class="carousel-item" data-mdb-interval="5">
-      <img src={Mens1} class="d-block w-100" alt="#"  style={{height:"400px"}}/>
+    <div className="carousel-item" data-mdb-interval="5">
+      <img src={Mens1} className="d-block w-100" alt="#"  style={{height:"400px"}}/>
     </div>
-    <div class="carousel-item" data-mdb-interval="1">
-      <img src={Mens2} class="d-block w-100"
+    <div className="carousel-item" data-mdb-interval="1">
+      <img src={Mens2} className="d-block w-100"
         alt="#"  style={{height:"400px"}} />
     </div>
-    <div class="carousel-item" data-mdb-interval="2">
-      <img src={Mens3} class="d-block w-100"
+    <div className="carousel-item" data-mdb-interval="2">
+      <img src={Mens3} className="d-block w-100"
         alt="#"   style={{height:"400px"}}/>
     </div>
-    <div class="carousel-item" data-mdb-interval="3">
-      <img src={Mens4} class="d-block w-100"
+    <div className="carousel-item" data-mdb-interval="3">
+      <img src={Mens4} className="d-block w-100"
         alt="#"  style={{height:"400px"}}/>
     </div>
-    <div class="carousel-item" data-mdb-interval="4">
-      <img src={Mens5} class="d-block w-100"
+    <div className="carousel-item" data-mdb-interval="4">
+      <img src={Mens5} className="d-block w-100"
         alt="#"  style={{height:"400px"}}/>
     </div>
-    <div class="carousel-item" data-mdb-interval="5">
-      <img src={Mens6} class="d-block w-100"
+    <div className="carousel-item" data-mdb-interval="5">
+      <img src={Mens6} className="d-block w-100"
         alt="#"  style={{height:"400px"}} />
     </div>
-    <div class="carousel-item" data-mdb-interval="6">
-      <img src={Mens7} class="d-block w-100"
+    <div className="carousel-item" data-mdb-interval="6">
+      <img src={Mens7} className="d-block w-100"
         alt="#"  style={{height:"400px"}}/>
     </div>
   </div>
-  <button class="carousel-control-prev" data-mdb-target="#carouselExampleInterval" type="button"
+  <button className="carousel-control-prev" data-mdb-target="#carouselExampleInterval" type="button"
     data-mdb-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" data-mdb-target="#carouselExampleInterval" type="button"
+  <button className="carousel-control-next" data-mdb-target="#carouselExampleInterval" type="button"
     data-mdb-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
   </button>
 </div>
   )

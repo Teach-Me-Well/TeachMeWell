@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 export default function terms() {
   return (
     <>
-<nav class="navbar" style={{backgroundColor:"#8ea7e9", marginTop:"-2rem"}}>
-    <a class="navbar-brand mx-auto " href="#">
+<nav className="navbar" style={{backgroundColor:"#8ea7e9", marginTop:"-2rem"}}>
+    <a className="navbar-brand mx-auto " href="#">
     <Link to="/">
     <img src={Logo} height="auto" width="303px" style={{ margin: "-7rem" }} alt="magva logo" />
     </Link>
