@@ -1,0 +1,50 @@
+
+.prev{
+  background-color:rgba(255, 68, 68, 0.834);
+}
+.prev:hover{
+  background-color: #bb5d5d;
+    transition: 0.5s;
+}
+.next2{
+  background-color:rgba(255, 68, 68, 0.834);
+  /* position: absolute; */
+}
+.next2:hover{
+  background-color: #bb5d5d;
+  transition: 0.5s;
+  /* position: absolute; */
+}
+
+.element.style {
+  border: none;
+  border-radius: 20px;
+  width: 297px;
+  height: 187px;
+}
+.button1{
+  transition: 0.5s;
+  background-color: crimson;
+  width :90px;
+  height: 30px;
+  border-radius: 12px;
+  color: aliceblue;
+  cursor: pointer;
+  position: absolute;
+}
+.button1:hover{
+  transition: 1s;
+  background-color: rgba(220, 20, 60, 0.605);
+} 
+.flash {
+  width: 93%;
+    margin: auto;
+}
+.containe{
+  /* width: 1448px; */
+  /* height: 375px; */
+  /* margin-left: 8px; */
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 19px 10px rgb(133, 133, 133);
+}

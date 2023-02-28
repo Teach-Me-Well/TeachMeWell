@@ -54,8 +54,9 @@ function navbar() {
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 {/* <div className="dropdown-menu px-3" aria-labelledby="userAccount"> */}
                 <div className="d-flex flex-column justify-content-center">
-                  <Link to='/login'><a href="#" className="btn-sign w-75 btn-sm font-weight-bold">Signin</a></Link>
-                  <a href="#" className="btn-sign w-75 btn-sm font-weight-bold">Signup</a>
+                  <Link to='/login'><a href="#" className="btn-sign w-75 btn-sm font-weight-bold">Sign-in</a></Link>
+                  <hr></hr>
+                  <Link to='/signup'><a href="#" className="btn-sign w-75 btn-sm font-weight-bold">Sign-up</a></Link>
 
                   {/* <small>New customer?<a href="#"> Start here.</a></small> */}
                 </div>

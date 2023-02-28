@@ -9,7 +9,7 @@ import Subhead from "../Subhead/Subhead"
 // import Annocument from '../Annocument'
 import Footer from "../Footer/footer"
 import Slide from "../Slidingimage/slide";
-// import Brand from "../Brands/brands"
+import Brand from "../Brands/brands"
 // import Wrapper from '../wrapper/Wrapper'
 // import Slideingimg from '../slideingimg/slidingimg'
 // import Form from '../form/Form'
@@ -22,7 +22,7 @@ const Home = () => {
       <Navbar />
       <Subhead />
       <Slide />
-      {/* <Brand /> */}
+      <Brand />
       {/* <FlashDeals/> */}
       <Footer />
     </div>
