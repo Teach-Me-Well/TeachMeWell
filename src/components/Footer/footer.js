@@ -29,22 +29,22 @@ export default function App() {
         </div>
 
         <div>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.facebook.com/profile.php?id=100079062128605' className='me-4 text-reset'>
             <MDBIcon fab icon="facebook-f" />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://twitter.com/ashishbhargav03' className='me-4 text-reset'>
             <MDBIcon fab icon="twitter" />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='mailto:ashishcsemitrc2020@gmail.com'className='me-4 text-reset'>
             <MDBIcon fab icon="google" />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.instagram.com/the_mayur_bhargava/' className='me-4 text-reset'>
             <MDBIcon fab icon="instagram" />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.linkedin.com/in/mayur-bhargava-b643861b1/' className='me-4 text-reset'>
             <MDBIcon fab icon="linkedin" />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://github.com/mayur-bhargav' className='me-4 text-reset'>
             <MDBIcon fab icon="github" />
           </a>
         </div>
@@ -88,14 +88,16 @@ export default function App() {
                 </a>
               </p>
               <ul>
-               <Link to='/terms'> <li>
+                <a href='/terms'>        
+                <li >
 
                   Term's and Condition
-                </li></Link>
-                <Link to='/privacy'> <li>
+                </li></a>
+                <a href='/privacy'>
+                <li >
 
                   Privacy Policy
-                </li></Link>
+                </li></a>
               </ul>
             </MDBCol>
 
@@ -135,21 +137,26 @@ export default function App() {
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <p>
                 <MDBIcon icon="home" className="me-2" />
-                Inside Delhi Gate
+                <a href='https://goo.gl/maps/gyToMj9rvUiCzSkV9'>Inside Delhi Gate
                 Near Jain Despensery Bhargava Bhwan
 
-                Alwar ,Rajasthan, India.
+                Alwar ,Rajasthan, India.</a>
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />
-                Email: mayurbhargava026@gmail.com
+                Email: <a  href='mailto:mayurbhargava026@gmail.com'>mayurbhargava026@gmail.com</a>
+              </p>
+              <p>
+                <MDBIcon icon="envelope" className="me-3" />
+                Email: <a  href='mailto:ashishcsemitrc2020@gmail.com'>ashishcsemitrc2020@gmail.com</a>
               </p>
               <p>
                 <MDBIcon icon="phone" className="me-3" />
-                +91-8619365849
+                <a href="https://wa.me/+918619365849">+91-8619365849</a>
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-3" /> +91-8949859527
+                <MDBIcon icon="phone" className="me-3" />
+                <a href="https://wa.me/+918949859527"> +91-8949859527</a>
               </p>
             </MDBCol>
           </MDBRow>
@@ -159,7 +166,7 @@ export default function App() {
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)', color: "black" }}>
         © 2023 Copyright:
         <a className='text-reset fw-bold' href='#'>
-          MAGVAA.com
+          MAGVA.com
         </a>
       </div>
     </MDBFooter>

@@ -15,34 +15,34 @@ export default function slide() {
   return (
 <div id="carouselExampleInterval" className="carousel slide" data-mdb-ride="carousel">
   <div className="carousel-inner">
-    <div className="carousel-item active" data-mdb-interval="5">
+    <div className="carousel-item active" data-mdb-interval="4000">
       <img src={Mens} className="d-block w-100"
         alt="#" style={{height:"400px"}} />
     </div>
-    <div className="carousel-item" data-mdb-interval="5">
+    <div className="carousel-item" data-mdb-interval="4000">
       <img src={Mens1} className="d-block w-100" alt="#"  style={{height:"400px"}}/>
     </div>
-    <div className="carousel-item" data-mdb-interval="1">
+    <div className="carousel-item" data-mdb-interval="4000">
       <img src={Mens2} className="d-block w-100"
         alt="#"  style={{height:"400px"}} />
     </div>
-    <div className="carousel-item" data-mdb-interval="2">
+    <div className="carousel-item" data-mdb-interval="4000">
       <img src={Mens3} className="d-block w-100"
         alt="#"   style={{height:"400px"}}/>
     </div>
-    <div className="carousel-item" data-mdb-interval="3">
+    <div className="carousel-item" data-mdb-interval="4000">
       <img src={Mens4} className="d-block w-100"
         alt="#"  style={{height:"400px"}}/>
     </div>
-    <div className="carousel-item" data-mdb-interval="4">
+    <div className="carousel-item" data-mdb-interval="4000">
       <img src={Mens5} className="d-block w-100"
         alt="#"  style={{height:"400px"}}/>
     </div>
-    <div className="carousel-item" data-mdb-interval="5">
+    <div className="carousel-item" data-mdb-interval="4000">
       <img src={Mens6} className="d-block w-100"
         alt="#"  style={{height:"400px"}} />
     </div>
-    <div className="carousel-item" data-mdb-interval="6">
+    <div className="carousel-item" data-mdb-interval="4000">
       <img src={Mens7} className="d-block w-100"
         alt="#"  style={{height:"400px"}}/>
     </div>
