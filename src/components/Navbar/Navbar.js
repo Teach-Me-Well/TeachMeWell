@@ -1,9 +1,47 @@
+import React, { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../Navbar/navbar.css"
+import "../Navbar/navbar.css";
+import { useSelector } from "react-redux";
 import Logo from "../../assets/logo.png"
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
+import { signOut } from "firebase/auth";
+import { auth } from "../firebase/firebase-service";
+import { onAuthStateChanged } from "firebase/auth";
 
-function navbar() {
+const Navbar = () => {
+  const state = useSelector((state) => state.cartReducer);
+  const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        // User is signed in, see docs for a list of available properties
+        // https://firebase.google.com/docs/reference/js/firebase.User
+        const uid = user.uid;
+        // ...
+        setIsUserLoggedIn(true);
+        console.log("uid", uid);
+      } else {
+        // User is signed out
+        // ...
+        setIsUserLoggedIn(false);
+        console.log("user is logged out");
+      }
+    });
+  }, []);
+
+  const handleLogout = () => {
+    signOut(auth)
+      .then(() => {
+        // Sign-out successful.
+        //navigate("/");
+        console.log("Signed out successfully");
+      })
+      .catch((error) => {
+        // An error happened.
+      });
+  };
+ 
   return (
     <>
       <nav className="navbar absolute-top navbar-expand-lg navbar-light ">
@@ -48,17 +86,42 @@ function navbar() {
           <ul className="navbar-nav mx-auto">
 
             <li className="nav-item dropdown px-2">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i className="fa-solid fa-user"></i> Sign in or Create Account
+            {isUserLoggedIn ? (
+         
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i className="fa-solid fa-user"></i>    Profile
               </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Account</a></li>
+                <li><a class="dropdown-item" href="#">Your Orders</a></li>
+                <li><Link to ="/wishlist"><a class="dropdown-item" >Your Wishlist</a></Link></li>
+                <li><a class="dropdown-item" style={{cursor:"pointer"}} onClick={handleLogout}>Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        
+             
+        )
+        
+   
+       
+
+       
+       
+       : (<a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i className="fa-solid fa-user"></i> Sign in or Create Account
+              </a> )}
+              <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                 {/* <div className="dropdown-menu px-3" aria-labelledby="userAccount"> */}
                 <div className="d-flex flex-column justify-content-center">
-                  <Link to='/login'><a href="#" className="btn-sign w-75 btn-sm font-weight-bold">Sign-in</a></Link>
+                  <Link to='/login'><a href="#" className="dropdown-item">Sign-in</a></Link>
                   <hr></hr>
-                  <Link to='/signup'><a href="#" className="btn-sign w-75 btn-sm font-weight-bold">Sign-up</a></Link>
+                  <Link to='/signup'><a href="#" className="dropdown-item">Sign-up</a></Link>
+                 
 
-                  {/* <small>New customer?<a href="#"> Start here.</a></small> */}
+               
                 </div>
               </ul>
             </li>
@@ -75,4 +138,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default Navbar;

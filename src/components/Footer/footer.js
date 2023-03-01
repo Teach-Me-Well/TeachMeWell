@@ -32,8 +32,8 @@ export default function App() {
           <a href='https://www.facebook.com/profile.php?id=100079062128605' className='me-4 text-reset'>
             <MDBIcon fab icon="facebook-f" />
           </a>
-          <a href='https://twitter.com/ashishbhargav03' className='me-4 text-reset'>
-            <MDBIcon fab icon="twitter" />
+          <a  href='https://twitter.com/ashishbhargav03' className='me-4 text-reset'>
+            <MDBIcon  fab icon="twitter" />
           </a>
           <a href='mailto:ashishcsemitrc2020@gmail.com'className='me-4 text-reset'>
             <MDBIcon fab icon="google" />
@@ -104,7 +104,7 @@ export default function App() {
             <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Customer Care</h6>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/help' className='text-reset'>
                   Help Centre
                 </a>
               </p>

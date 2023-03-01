@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <div style={{marginTop:"-2rem"}}>
 
-      <Navbar />
+      <Navbar /> 
       <Subhead />
       <Slide />
       <Brand />
