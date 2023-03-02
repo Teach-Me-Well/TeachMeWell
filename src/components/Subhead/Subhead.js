@@ -25,14 +25,14 @@ export default function Subhead() {
                                 <a
                                     className="nav-link dropdown-toggle"
                                     href="#"
-                                    id="navbarDropdown"
+                                    id="navbarDarkDropdownMenuLink"
                                     role="button"
                                     data-mdb-toggle="dropdown"
                                     aria-expanded="false"
                                 >
                                     Categories
                                 </a>
-                                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul className="dropdown-menu dropdown-menu-dark dropdown-menu dropdown-menu-dark-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                                     <li className="sub-menu-title">
                                         <a href="#" className="dropdown-item">Electronics</a>
                                     </li>
@@ -108,14 +108,14 @@ export default function Subhead() {
                                 <a
                                     className="nav-link dropdown-toggle"
                                     href="#"
-                                    id="navbarDropdown"
+                                    id="navbarDarkDropdownMenuLink"
                                     role="button"
                                     data-mdb-toggle="dropdown"
                                     aria-expanded="false"
                                 >
                                     Men's
                                 </a>
-                                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                                     <li className="submenu-category">
                                         <a href="#" className="dropdown-item">Shirt</a>
                                     </li>
@@ -138,14 +138,14 @@ export default function Subhead() {
                                 <a
                                     className="nav-link dropdown-toggle"
                                     href="#"
-                                    id="navbarDropdown"
+                                    id="navbarDarkDropdownMenuLink"
                                     role="button"
                                     data-mdb-toggle="dropdown"
                                     aria-expanded="false"
                                 >
                                     Women's
                                 </a>
-                                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                                     <li className="submenu-category">
                                         <a href="#" className="dropdown-item">Dress & Frock</a>
                                     </li>
@@ -167,14 +167,14 @@ export default function Subhead() {
                                 <a
                                     className="nav-link dropdown-toggle"
                                     href="#"
-                                    id="navbarDropdown"
+                                    id="navbarDarkDropdownMenuLink"
                                     role="button"
                                     data-mdb-toggle="dropdown"
                                     aria-expanded="false"
                                 >
                                     Jewelry
                                 </a>
-                                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                                     <li className="submenu-category">
                                         <a href="#" className="dropdown-item">Earrings</a>
                                     </li>
@@ -199,14 +199,14 @@ export default function Subhead() {
                                 <a
                                     className="nav-link dropdown-toggle"
                                     href="#"
-                                    id="navbarDropdown"
+                                    id="navbarDarkDropdownMenuLink"
                                     role="button"
                                     data-mdb-toggle="dropdown"
                                     aria-expanded="false"
                                 >
                                     Perfume
                                 </a>
-                                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                                     <li className="submenu-category">
                                         <a href="#" className="dropdown-item">Clothes Perfume</a>
                                     </li>

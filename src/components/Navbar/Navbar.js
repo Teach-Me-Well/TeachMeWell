@@ -52,7 +52,8 @@ const Navbar = () => {
     
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+          {/* <span className="navbar-toggler-icon"></span> */}
+          <i class="fa-solid fa-user"></i>
         </button>
         <form className="form-inline px-lg-5">
           <div className="input-group">
@@ -93,7 +94,7 @@ const Navbar = () => {
               <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i className="fa-solid fa-user"></i>    Profile
               </a>
-              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <ul class="dropdown-menu dropdown-menu-dark " aria-labelledby="navbarDarkDropdownMenuLink">
                 <li><a class="dropdown-item" href="#">Account</a></li>
                 <li><a class="dropdown-item" href="#">Your Orders</a></li>
                 <li><Link to ="/wishlist"><a class="dropdown-item" >Your Wishlist</a></Link></li>

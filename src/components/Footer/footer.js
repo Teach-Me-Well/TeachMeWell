@@ -16,7 +16,7 @@ export default function App() {
   return (
     
 
-    <MDBFooter className='text-center text-lg-start text-muted' style={{ margin: "auto", marginTop: "30%", backgroundColor: '#7286D3' }}>
+    <MDBFooter className='text-center text-lg-start text-muted' style={{ margin: "auto", marginTop: "10%", backgroundColor: '#7286D3' }}>
        <div className='text-center p-4' style={{ backgroundColor: '#8EA7E9', color: "black" , fontSize:"23px"}}>
         <a className='text-reset fw-bold' href='#'>
           Back To Top <i class="fas fa-angle-double-up"></i>
