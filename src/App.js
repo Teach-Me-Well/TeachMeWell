@@ -14,6 +14,9 @@ import Worngreset from"./components/account/worngreset";
 import Wishlist from "./components/account/wishlist";
 import Help from "./components/scenes/helpcenter"
 import Cart from "../src/components/CartItems/CartItems";
+import Track from "../src/components/scenes/track";
+import Error from "../src/components/scenes/error";
+
 function App() {
   return (
 
@@ -33,6 +36,12 @@ function App() {
                   <Route path="/wishlist" element={<Wishlist/>} />
                   <Route path="/help" element={<Help/>} />
                   <Route path="/cart" element={<Cart />} />
+                  <Route path="/track" element={<Track />} />
+                  <Route path="/error" element={<Error />} />
+
+
+                  
+
 
         
       </Routes>

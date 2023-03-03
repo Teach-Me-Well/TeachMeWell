@@ -114,10 +114,12 @@ export default function App() {
                 </a>
               </p>
               <p>
+                <Link to="/track">
                 <a href='#!' className='text-reset'>
                   Track Your Order
 
                 </a>
+                </Link>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
