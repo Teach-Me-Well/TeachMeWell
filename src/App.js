@@ -3,16 +3,17 @@ import './App.css';
 import { Provider } from "react-redux";
 import store from "./redux/Store";
 import Home from "../src/components/Home/Home"
-import Login from './components/Login/login'
-import Signup from "./components/Signup/signup"
-import Terms from './components/Terms/terms'
-import Privacy from "./components/Privacy/Privacy"
+import Login from './components/account/login'
+import Signup from "./components/account/signup"
+import Terms from './components/scenes/terms'
+import Privacy from "./components/scenes/Privacy"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Reset from "./components/resetpass/resetpass";
-import Afterreset from"./components/resetpass/afterreset.js"
-import Worngreset from"./components/resetpass/worngreset";
-import Wishlist from "./components/wishlist/wishlist";
-import Help from "./components/helpcenter/helpcenter"
+import Reset from "./components/account/resetpass";
+import Afterreset from"./components/account/afterreset.js"
+import Worngreset from"./components/account/worngreset";
+import Wishlist from "./components/account/wishlist";
+import Help from "./components/scenes/helpcenter"
+import Cart from "../src/components/CartItems/CartItems";
 function App() {
   return (
 
@@ -31,6 +32,7 @@ function App() {
                   <Route path="/worngreset" element={<Worngreset/>} />
                   <Route path="/wishlist" element={<Wishlist/>} />
                   <Route path="/help" element={<Help/>} />
+                  <Route path="/cart" element={<Cart />} />
 
         
       </Routes>

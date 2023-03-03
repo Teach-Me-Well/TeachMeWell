@@ -1,24 +1,12 @@
 import React from "react";
 import { Form } from "react-router-dom";
-
-
-
-// import HeadInfo from '../headinfo/HeadInfo'
-import Navbar from "../Navbar/Navbar";
-import Subhead from "../Subhead/Subhead"
-// import Annocument from '../Annocument'
-import Footer from "../Footer/footer"
-import Slide from "../Slidingimage/slide";
-import Brand from "../Brands/brands"
-import Card from "../Slidecard/card"
-import Card1 from "../Slidecard1/card"
-
-// import Discount from "../Discount/card"
-// import Deals from "../deals/deals"
-// import Wrapper from '../wrapper/Wrapper'
-// import Slideingimg from '../slideingimg/slidingimg'
-// import Form from '../form/Form'
-// import FlashDeals from "../flashDeals/FlashDeals"
+import Navbar from "../scenes/Navbar";
+import Subhead from "../scenes/Subhead"
+import Footer from "../scenes/footer"
+import Slide from "../scenes/slide";
+import Brand from "../products/brands"
+import Card from "../products/card"
+import Card1 from "../products/card1"
 const Home = () => {
 
   return (
@@ -28,8 +16,6 @@ const Home = () => {
       <Subhead />
       <Slide />
       <Brand />
-      {/* <Deals/> */}
-      {/* <FlashDeals/> */}
       <Card/>
       <Card1/>
 
