@@ -25,7 +25,7 @@ function Product(props) {
       <p className="price">{props.price}</p>
       <p>{props.description}</p>
       <p>
-        <button onClick={() => addCartData(props)}>Add to Cart</button>
+        <button className="gradient-custom-2" onClick={() => addCartData(props)}>Add to Cart</button>
       </p>
     </div>
   );

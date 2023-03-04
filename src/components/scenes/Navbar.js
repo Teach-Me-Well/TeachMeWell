@@ -92,7 +92,7 @@ const Navbar = () => {
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i className="fa-solid fa-user"></i>    Profile
+              <i class="fa fa-user-circle" aria-hidden="true"></i>     Profile
               </a>
               <ul class="dropdown-menu dropdown-menu-dark " aria-labelledby="navbarDarkDropdownMenuLink">
                 <li><a class="dropdown-item" href="#">Account</a></li>
@@ -127,7 +127,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="nav-item px-2">
-            <Link to="/cart">  <a className="nav-link disabled" tabindex="-1" aria-disabled="true"> <i className="fa-solid fa-cart-shopping"></i> Shopping Cart</a></Link>
+            <Link to="/cart">  <a className="nav-link disabled" tabindex="-1" aria-disabled="true"> <i class="fa fa-shopping-bag" aria-hidden="true"></i>  Shopping Cart</a></Link>
             </li>
           </ul>
 
@@ -140,3 +140,5 @@ const Navbar = () => {
 }
 
 export default Navbar;
+
+

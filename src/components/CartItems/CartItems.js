@@ -23,19 +23,14 @@ const CartItems = () => {
       {" "}
       {state.cartData.length > 0 ? (
         <div className="head8">
-          <div className="headmain">
-            <Link to="/">
-              <img
-                src={Logo}
-                alt="not found"
-                style={{
-                  marginLeft: "700px",
-                  marginTop: "12px",
-                  width: "86px",
-                }}
-              />
-            </Link>
-          </div>
+          <nav className="navbar" style={{ backgroundColor: "#8ea7e9", marginTop: "-2rem" }}>
+            <a className="navbar-brand mx-auto " href="#">
+              <Link to="/">
+                <img src={Logo} height="auto" width="303px" style={{ margin: "-7rem" }} alt="magva logo" />
+              </Link>
+            </a>
+
+          </nav>
           <div className="cart-box">
             {" "}
             <div className="cart-items-data">
@@ -122,7 +117,7 @@ const CartItems = () => {
       ) : (
         <section style={{ overflow: "hidden" }}>
           {/* // <section className="h-212 gradient-form w-100" style={{backgroundColor:"#eee", overflow:"hidden"}}> */}
-          <div className="container mx-4 px-auto py-5 h-100">
+          <div className="container mx-auto px-auto py-5 h-100">
             <div className="row d-flex justify-content-center align-items-center h-100">
               <div className="col-xl-6">
                 <div className="card rounded-3 text-black">
@@ -135,7 +130,7 @@ const CartItems = () => {
                             style={{ width: "303px", margin: "-103px" }}
                             alt="logo"
                           />
-                          <img src={Load} alt="logo" />
+                          <img src={Load} alt="logo" style={{width:"-webkit-fill-available" }} />
                           <h4
                             className="mt-1 mb-5 pb-1"
                             style={{
