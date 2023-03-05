@@ -23,18 +23,6 @@ const CartItems = () => {
       {" "}
       {state.cartData.length > 0 ? (
         <div className="head8">
-          <nav className="navbar" style={{ backgroundColor: "#8ea7e9", marginTop: "-2rem" }}>
-            <a className="navbar-brand mx-auto " href="#">
-              <Link to="/">
-                <img src={Logo} height="auto" width="303px" style={{ margin: "-7rem" }} alt="magva logo" />
-              </Link>
-            </a>
-
-          </nav>
-          <div className="cart-box">
-            {" "}
-            <div className="cart-items-data">
-              {" "}
               {state.cartData.map((value) => {
                 console.log(value);
                 return (
@@ -68,7 +56,7 @@ const CartItems = () => {
                   </div>
                 );
               })}
-            </div>
+            
             <div className="price-box1">
               <h2 style={{ marginLeft: "-110px", marginTop: "-10px" }}>
                 cart Summary
@@ -112,7 +100,7 @@ const CartItems = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          
         </div>
       ) : (
         <section style={{ overflow: "hidden" }}>

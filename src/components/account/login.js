@@ -132,7 +132,7 @@ const Login = () => {
   return (
     <section style={{ overflow: "hidden" }}>
       {/* // <section className="h-212 gradient-form w-100" style={{backgroundColor:"#eee", overflow:"hidden"}}> */}
-      <div className="container mx-4 px-auto py-5 h-100">
+      <div className="container mx-auto px-auto py-5 h-100">
         <div className="row d-flex justify-content-center align-items-center h-100">
           <div className="col-xl-6">
             <div className="card rounded-3 text-black">
@@ -178,10 +178,11 @@ const Login = () => {
                           type="password"
                           id="form2Example22"
                           className="form-control"
-                          value={password}
-                          onChange={(e) => setPassword(e.target.value)}
+                          // value={password}
+                          // onChange={(e) => setPassword(e.target.value)}
                           placeholder="Enter Password"
                         />
+                
                         <label className="form-label" for="form2Example22">
                           Password
                         </label>
