@@ -29,23 +29,23 @@ export default function App() {
         </div>
 
         <div>
-          <a href='https://www.facebook.com/profile.php?id=100079062128605' className='me-4 text-reset'>
-            <MDBIcon fab icon="facebook-f" />
+         <a  className='me-4 text-reset'>
+         <Link to="https://www.facebook.com/profile.php?id=100079062128605"><MDBIcon fab icon="facebook-f" /></Link>
           </a>
-          <a  href='https://twitter.com/ashishbhargav03' className='me-4 text-reset'>
-            <MDBIcon  fab icon="twitter" />
+          <a   className='me-4 text-reset'>
+          <Link to="https://twitter.com/ashishbhargav03"><MDBIcon  fab icon="twitter" /></Link>
           </a>
-          <a href='mailto:ashishcsemitrc2020@gmail.com'className='me-4 text-reset'>
-            <MDBIcon fab icon="google" />
+          <a className='me-4 text-reset'>
+          <Link to="mailto:ashishcsemitrc2020@gmail.com"><MDBIcon fab icon="google" /></Link>
           </a>
-          <a href='https://www.instagram.com/the_mayur_bhargava/' className='me-4 text-reset'>
-            <MDBIcon fab icon="instagram" />
+          <a  className='me-4 text-reset'>
+          <Link to="https://www.instagram.com/the_mayur_bhargava/"><MDBIcon fab icon="instagram" /></Link>
           </a>
-          <a href='https://www.linkedin.com/in/mayur-bhargava-b643861b1/' className='me-4 text-reset'>
-            <MDBIcon fab icon="linkedin" />
+          <a className='me-4 text-reset'>
+          <Link to="https://www.linkedin.com/in/mayur-bhargava-b643861b1/"><MDBIcon fab icon="linkedin" /></Link>
           </a>
-          <a href='https://github.com/mayur-bhargav' className='me-4 text-reset'>
-            <MDBIcon fab icon="github" />
+          <a className='me-4 text-reset'>
+          <Link to="https://github.com/mayur-bhargav"><MDBIcon fab icon="github" /></Link>
           </a>
         </div>
       </section>
@@ -70,43 +70,44 @@ export default function App() {
             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>About us</h6>
               <p>
-                <a href='#!' className='text-reset'>
+              <Link to ="/careers"><a   className='text-reset'>
                   Careers
 
-                </a>
+                </a></Link>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+              <Link to ="/ourstore"><a  className='text-reset'>
                   Our Stores
 
-                </a>
+                </a></Link>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <Link to ="/ourcares"><a  className='text-reset'>
                   Our Cares
 
-                </a>
+                </a></Link>
               </p>
-              <ul>
+              <p>
                 <a href='/terms'>        
                 <li >
 
                   Term's and Condition
                 </li></a>
+                </p>
+                <p>
                 <a href='/privacy'>
                 <li >
 
                   Privacy Policy
-                </li></a>
-              </ul>
+                </li></a></p>
             </MDBCol>
 
             <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Customer Care</h6>
               <p>
-                <a href='/help' className='text-reset'>
+               <Link to="/help" ><a className='text-reset'>
                   Help Centre
-                </a>
+                </a></Link>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
@@ -122,15 +123,15 @@ export default function App() {
                 </Link>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <Link to="/coprate"><a  className='text-reset'>
                   Corporate & Bulk Purchasing
 
-                </a>
+                </a></Link>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <Link to= "/return"><a  className='text-reset'>
                 Returns & Refunds
-                </a>
+                </a></Link>
               </p>
             </MDBCol>
 
