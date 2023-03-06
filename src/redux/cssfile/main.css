@@ -116,12 +116,7 @@
     transform: translateY(-5px);
   }
   
-  .cart-box{
-    display : flex;
-    justify-content : space-between;
-}
-
-.cart-items-data{
+  .cart-items-data{
     display : flex;
     flex-wrap : wrap;
     max-width : 80%;
@@ -538,7 +533,12 @@ h1 {
     height: 16em;
     object-fit: cover;
   }
-  
+  .product--image-1 {
+    width: 210px;
+    height: 16em;
+    object-fit: scale-down;
+  }
+ 
   .card-1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 320px;
@@ -1192,3 +1192,10 @@ transform: scale(1.05) rotate(-1deg);
   left: 50%;
   transform: translate(-930%);
 } */
+.react-multi-carousel-list {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 474px;
+  position: relative;
+}

@@ -21,6 +21,7 @@ import Coprate from "../src/components/scenes/coprate"
 import Ourcares from "../src/components/scenes/ourcares"
 import Ourstore from "../src/components/scenes/ourstore"
 import Careers from "../src/components/scenes/careers"
+import Electronic from "../src/components/products/electronic"
 function App() {
   return (
 
@@ -47,6 +48,9 @@ function App() {
                   <Route path="/ourcares" element={<Ourcares />} />
                   <Route path="/ourstore" element={<Ourstore />} />
                   <Route path="/careers" element={<Careers />} />
+                  <Route path="/electronic" element={<Electronic />} />
+
+
 
         
       </Routes>

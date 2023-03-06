@@ -1,5 +1,6 @@
 import React from 'react'
 import "mdb-ui-kit/js/mdb.min.js"
+import { Link } from 'react-router-dom'
 export default function Subhead() {
     return (
         <>
@@ -33,9 +34,9 @@ export default function Subhead() {
                                     Categories
                                 </a>
                                 <ul className="dropdown-menu dropdown-menu-dark dropdown-menu dropdown-menu-dark-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                    <li className="sub-menu-title">
+                                   <Link to="/electronic"><li className="sub-menu-title">
                                         <a href="#" className="dropdown-item">Electronics</a>
-                                    </li>
+                                    </li></Link> 
 
                                     <li className="sub-menu-title">
                                         <a href="#" className="dropdown-item">Smart Watch</a>
