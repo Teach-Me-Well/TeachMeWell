@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../redux/cssfile/main.css"
 import { useSelector } from "react-redux";
 import Logo from "../../assets/logo.png"
-import { Link,useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase/firebase-service";
 import { onAuthStateChanged } from "firebase/auth";
@@ -41,7 +41,7 @@ const Navbar = () => {
         // An error happened.
       });
   };
- 
+
   return (
     <>
       <nav className="navbar absolute-top navbar-expand-lg navbar-light ">
@@ -49,7 +49,7 @@ const Navbar = () => {
         <a className="navbar-brand pl-2" href="#">
           <img src={Logo} height="auto" width="161px" style={{ margin: "-3rem" }} alt="magva logo" />
         </a>
-    
+
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           {/* <span className="navbar-toggler-icon"></span> */}
@@ -78,7 +78,7 @@ const Navbar = () => {
           </div>
 
         </form>
-    
+
 
 
 
@@ -87,55 +87,55 @@ const Navbar = () => {
           <ul className="navbar-nav mx-auto">
 
             <li className="nav-item dropdown px-2">
-            {isUserLoggedIn ? (
-         
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa fa-user-circle" aria-hidden="true"></i>     Profile
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark " aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Account</a></li>
-                <li><a class="dropdown-item" href="#">Your Orders</a></li>
-                <li><Link to ="/wishlist"><a class="dropdown-item" >Your Wishlist</a></Link></li>
-                <li><a class="dropdown-item" style={{cursor:"pointer"}} onClick={handleLogout}>Logout</a></li>
-              </ul>
-            </li>
-          </ul>
-        
-             
-        )
-        
-   
-       
+              {isUserLoggedIn ? (
 
-       
-       
-       : (<a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i className="fa-solid fa-user"></i> Sign in or Create Account
-              </a> )}
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa fa-user-circle" aria-hidden="true"></i>     Profile
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark " aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Account</a></li>
+                      <li><a class="dropdown-item" href="#">Your Orders</a></li>
+                      <li><Link to="/wishlist"><a class="dropdown-item" >Your Wishlist</a></Link></li>
+                      <li><a class="dropdown-item" style={{ cursor: "pointer" }} onClick={handleLogout}>Logout</a></li>
+                    </ul>
+                  </li>
+                </ul>
+
+
+              )
+
+
+
+
+
+
+                : (<a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i className="fa-solid fa-user"></i> Sign in or Create Account
+                </a>)}
               <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                 {/* <div className="dropdown-menu px-3" aria-labelledby="userAccount"> */}
                 <div className="d-flex flex-column justify-content-center">
                   <Link to='/login'><a href="#" className="dropdown-item">Sign-in</a></Link>
                   <hr></hr>
                   <Link to='/signup'><a href="#" className="dropdown-item">Sign-up</a></Link>
-                 
 
-               
+
+
                 </div>
               </ul>
             </li>
             <li className="nav-item px-2">
-            <Link to="/cart">  <a className="nav-link disabled" tabindex="-1" aria-disabled="true"> <i class="fa fa-shopping-bag" aria-hidden="true"></i>  Shopping Cart</a></Link>
+              <Link to="/cart">  <a className="nav-link disabled" tabindex="-1" aria-disabled="true"> <i class="fa fa-shopping-bag" aria-hidden="true"></i>  Shopping Cart</a></Link>
             </li>
           </ul>
 
         </div>
-        
+
       </nav>
-      
-</>
+
+    </>
   );
 }
 

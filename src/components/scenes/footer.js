@@ -36,7 +36,7 @@ export default function App() {
           <Link to="https://twitter.com/ashishbhargav03"><MDBIcon  fab icon="twitter" /></Link>
           </a>
           <a className='me-4 text-reset'>
-          <Link to="mailto:ashishcsemitrc2020@gmail.com"><MDBIcon fab icon="google" /></Link>
+          <Link to="mailto:ashishcsemitrc2020@gmail.com"><MDBIcon icon="envelope"  /></Link>
           </a>
           <a  className='me-4 text-reset'>
           <Link to="https://www.instagram.com/the_mayur_bhargava/"><MDBIcon fab icon="instagram" /></Link>

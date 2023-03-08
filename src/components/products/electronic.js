@@ -14,6 +14,7 @@ import { productData2 } from "./data2";
 import { productData3 } from "./data2";
 import { productData4 } from "./data2";
 import "../../redux/cssfile/main.css"
+import Electronic from "../../assets/electronic.png"
 import {
   MDBFooter,
   MDBContainer,
@@ -23,10 +24,6 @@ import {
   MDBRow,
   MDBBtn
 } from 'mdb-react-ui-kit';
-
-
-
-
 export default function App() {
     const product = productData.map((item) => (
         <Product
@@ -34,6 +31,8 @@ export default function App() {
             url={item.cover}
             price={item.price}
             description={item.description}
+            description1={item.description1}
+
         />
     ));
     const product1 = productData1.map((item) => (
@@ -42,6 +41,8 @@ export default function App() {
             url={item.cover}
             price={item.price}
             description={item.description}
+            description1={item.description1}
+
         />
 
     ));
@@ -51,6 +52,8 @@ export default function App() {
             url={item.cover}
             price={item.price}
             description={item.description}
+            description1={item.description1}
+
         />
 
     ));
@@ -60,6 +63,8 @@ export default function App() {
             url={item.cover}
             price={item.price}
             description={item.description}
+            description1={item.description1}
+
         />
 
     ));
@@ -69,6 +74,8 @@ export default function App() {
             url={item.cover}
             price={item.price}
             description={item.description}
+            description1={item.description1}
+
         />
 
     ));
@@ -82,7 +89,7 @@ export default function App() {
                     </Link>
                 </a>
             </nav>
-            <img src="https://th.bing.com/th/id/R.3f5167044a01ff4420c835f95e8f54a1?rik=CFfdCscBPLLl9g&riu=http%3a%2f%2fwww.shopickr.com%2fwp-content%2fuploads%2f2015%2f10%2fsnapdeal-ultimate-monday-electronics-sale-banner.jpg&ehk=m8rvqsgMJxNEa%2fEmeWkULhDEEa2VYSCMr2B8u79k9co%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="Wild Landscape" style={{ height: "500px" }} />
+            <img src={Electronic} class="d-block w-100" alt="Wild Landscape" style={{ height: "430px" }} />
             <div className="App">
                 <h2 class="title">Smart Phones</h2>
                 <Carousel responsive={responsive}>
@@ -209,7 +216,7 @@ export default function App() {
 
                     <div class="row">
                         <div class="col-lg-4 col-md-12 mb-4">
-                            <div class="bg-image hover-zoom ">
+                            <div class="bg-image">
                                 <img src="https://th.bing.com/th/id/OIP.azugieZifXjYqtyuBfh8ogHaE8?pid=ImgDet&rs=1"
                                     class="w-100" />
                                 <a href="#!">

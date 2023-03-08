@@ -7,6 +7,7 @@ import Slide from "../scenes/slide";
 import Brand from "../products/brands"
 import Card from "../products/card"
 import Card1 from "../products/card1"
+import Best from "../products/best"
 const Home = () => {
 
   return (
@@ -18,6 +19,8 @@ const Home = () => {
       <Brand />
       <Card/>
       <Card1/>
+      <Best/>
+
       <Footer />
     </div>
   );

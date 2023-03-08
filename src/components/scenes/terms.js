@@ -14,7 +14,7 @@ export default function terms() {
 
 </nav>
 <div>
-<h2 style={{textAlign:"center"}}><b>TERMS AND CONDITIONS</b></h2>
+<h2 className='title' style={{textAlign:"center"}}><b>TERMS AND CONDITIONS</b></h2>
 <p style={{ textAlign:"center"}} >Last updated: 2023-01-01</p>
 <p style={{paddingLeft:"10px"}}><b>1.</b> <b >Introduction</b></p>
 <p style={{paddingLeft:"10px" , textAlign:"center"}}>Welcome to <b>MAGVA</b> (“Company”, “we”, “our”, “us”)!</p>
