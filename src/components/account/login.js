@@ -178,8 +178,8 @@ const Login = () => {
                           type="password"
                           id="form2Example22"
                           className="form-control"
-                          // value={password}
-                          // onChange={(e) => setPassword(e.target.value)}
+                          value={password}
+                          onChange={(e) => setPassword(e.target.value)}
                           placeholder="Enter Password"
                         />
                 

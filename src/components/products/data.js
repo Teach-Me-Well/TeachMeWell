@@ -24,7 +24,7 @@ export  const productData = [
     cover:
       "./images/flash/flash-1.png",
     name: "Sports Shoes",
-    price: "Rs. 1000",
+    price: 1000,
     description: "Upto 80% Off",
   },
   {
@@ -32,7 +32,7 @@ export  const productData = [
     cover:
     "./images/flash/flash-2.png",
     name: "Watch",
-    price: "Rs. 2000",
+    price: 2000,
     description: "Upto 71% Off",
   },
   {
@@ -40,7 +40,7 @@ export  const productData = [
     cover:
       "./images/flash/flash-3.png",
     name: "Smart Mobile Black",
-    price: "Rs. 16000",
+    price: 16000,
     description: "Upto 60% Off",
   },
   {
@@ -48,7 +48,7 @@ export  const productData = [
     cover:
       "./images/flash/flash-4.png",
     name: "Smart Watch Black",
-    price: "Rs. 16000",
+    price: 16000,
     description: "Upto 67% Off",
   },
   {
@@ -56,7 +56,7 @@ export  const productData = [
     cover:
     "./images/discount/discount-1.png",
   name: "Headphone",
-  price: "Rs. 2500",
+  price: 2500,
   description: "Upto 50% Off",
   },
   {
@@ -64,7 +64,7 @@ export  const productData = [
     cover:
     "./images/discount/discount-2.png",
   name: "Sony Tv",
-  price: "Rs. 46000",
+  price: 46000,
   description: "Upto 10% Off",
   },
   {
@@ -72,7 +72,7 @@ export  const productData = [
     cover:
     "./images/discount/discount-3.png",
   name: "Sony PS4",
-  price: "Rs. 1600",
+  price: 1600,
   description: "Upto 20% Off",
   },
   {
@@ -80,7 +80,7 @@ export  const productData = [
     cover:
     "./images/discount/discount-5.png",
     name: "Echo Dot",
-    price: "Rs. 2500",
+    price: 2500,
     description: "Upto 20% Off",
   },
 ];

@@ -23,14 +23,14 @@ export const productData = [
     id: 1,
     cover:"./images/flash/d-2.jpeg",
     name: "Colorful Shoes",
-    price: "Rs. 1500",
+    price:  1500,
     description: "Upto 80% Off",
   },
   {
     id: 2,
     cover:"./images/flash/d-9.jpg",
     name: "Sport shoes",
-    price: "Rs.1000 ",
+    price: 1000 ,
     description: "Upto 50% Off",
   },
   {
@@ -38,7 +38,7 @@ export const productData = [
     cover:"./images/flash/d-3.jpg",
 
     name: "iWatch",
-    price: "Rs. 2500",
+    price:  2500,
     description: "Upto 10% Off",
   },
   {
@@ -46,7 +46,7 @@ export const productData = [
     cover:"./images/flash/d-4.jpeg",
 
     name: "Water Bottle",
-    price: "Rs. 200",
+    price:  200,
     description: "Upto 30% Off",
   },
   {
@@ -54,7 +54,7 @@ export const productData = [
     cover:"./images/flash/d-5.webp",
 
        name: "Wireless Earbuds",
-    price: "Rs. 2200",
+    price:  2200,
     description: "Upto 20% Off",
   },
   {
@@ -62,7 +62,7 @@ export const productData = [
     cover:"./images/flash/d-6.jpg",
 
     name: "Apple Macbook",
-    price: "Rs. 150000",
+    price:  150000,
     description: "Upto 60% Off",
   },
   {
@@ -70,7 +70,7 @@ export const productData = [
     cover:"./images/flash/d-7.webp",
 
     name: "Sunglasses",
-    price: "Rs. 150",
+    price:  150,
     description: "Upto 50% Off",
   },
   {
@@ -78,7 +78,7 @@ export const productData = [
     cover:"./images/flash/d-8.jpeg",
 
     name: "i phone 13",
-    price: "Rs. 100000",
+    price:  100000,
     description: "Upto 70% Off",
   },
 ];

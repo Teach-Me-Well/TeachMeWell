@@ -186,8 +186,8 @@ const Signup = () => {
                           <input
                             type="password"
                             id="form2Example22"
-                            // value={password}
-                            // onChange={(e) => setPassword(e.target.value)}
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
                             className="form-control"
                             placeholder="Enter Password"
                           />

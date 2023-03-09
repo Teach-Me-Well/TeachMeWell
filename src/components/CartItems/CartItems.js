@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { deleteFromCart } from "../../redux/cart/cartAction";
 import Logo from "../../assets/logo.png";
 import Load from "../../assets/load.png";
+
 const CartItems = () => {
   const state = useSelector((state) => state.cartReducer);
   console.log(state);
@@ -17,6 +18,7 @@ const CartItems = () => {
     (accumulator, current) => accumulator + current.items.price,
     0
   );
+  const subTotal1 = subTotal + 50
   console.log(subTotal);
 
   return (
@@ -37,7 +39,7 @@ const CartItems = () => {
               <div class="col-10">
 
                 <div class="d-flex justify-content-between align-items-center mb-4">
-                  <h3 class="fw-normal mb-0 text-black mx-auto" style={{ fontFamily: "monospace", fontSize: "40px" }}>Shopping Cart</h3>
+                  <h3 class="fw-normal mb-0 text-black mx-auto" style={{ fontFamily: "monospace", fontSize: "40px" }}>Cart Summary</h3>
 
                 </div>
               </div>
@@ -68,12 +70,12 @@ const CartItems = () => {
                                 <p class="lead fw-normal mb-2">{value.items.name}</p>
                               </div>
                               <div class="col-lg-4 col-xl-3">
-                          <div class="d-flex justify-content-between" style={{ fontWeight: "500" }}>
-                            <p class="mb-2">Price: {value.items.price} </p>
-                            
-                          </div>
-                          </div>
-                          
+                                <div class="d-flex justify-content-between" style={{ fontWeight: "500" }}>
+                                  <p class="mb-2">Price: {value.items.price} Rs. </p>
+
+                                </div>
+                              </div>
+
 
 
 
@@ -154,7 +156,7 @@ const CartItems = () => {
 
                               <div class="form-outline mb-4 mb-xl-5">
                                 <input type="text" id="typeExp" class="form-control form-control-lg" placeholder="MM/YY"
-                                  size="7"  minlength="7" maxlength="7" />
+                                  size="7" minlength="7" maxlength="7" />
                                 <label class="form-label" for="typeExp">Expiration</label>
                               </div>
                             </div>
@@ -181,18 +183,18 @@ const CartItems = () => {
 
                           <div class="d-flex justify-content-between" style={{ fontWeight: "500" }}>
                             <p class="mb-0">Shipping</p>
-                            <p class="mb-0">00 Rs.</p>
+                            <p class="mb-0">50 Rs.</p>
                           </div>
 
 
                           <div class="d-flex justify-content-between mb-4" style={{ fontWeight: "500" }}>
                             <p class="mb-2">Total (tax included)</p>
-                            <p class="mb-2">00 Rs.</p>
+                            <p class="mb-2">{subTotal1} Rs.</p>
                           </div>
                           <hr class="my-4" />
                           <div class="d-flex justify-content-between mb-4" style={{ fontWeight: "500" }}>
-                            <p class="mb-2">Total Charges</p>
-                            <p class="mb-2">{subTotal}RS</p>
+                            <p class="mb-2">Summary</p>
+                            <p class="mb-2">{subTotal1}Rs.</p>
                           </div>
 
                           <button type="button" class="gradient-custom-2">

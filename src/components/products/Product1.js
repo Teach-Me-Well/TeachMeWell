@@ -23,7 +23,7 @@ function Product(props) {
     <div className="card-1 ">
       <img className="product--image" src={props.url} alt="product image" />
       <h4>{props.name}</h4>
-      <p className="price">{props.price}</p>
+      <p className="price">Rs.{props.price}</p>
       <p>{props.description}</p>
       <p> 
         <button className="gradient-custom-2" onClick={() => addCartData(props)}>Add to Cart</button>
