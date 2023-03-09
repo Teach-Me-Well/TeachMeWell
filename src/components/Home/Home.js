@@ -16,10 +16,11 @@ const Home = () => {
       <Navbar /> 
       <Subhead />
       <Slide />
-      <Brand />
-      <Card/>
-      <Card1/>
       <Best/>
+      <Card/>
+      <Brand/>
+      <Card1/>
+      
 
       <Footer />
     </div>

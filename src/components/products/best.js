@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export default function best() {
     return (
         <section style={{ backgroundColor: "#eee" }}>
@@ -8,7 +8,7 @@ export default function best() {
 
                 <div class="row">
                     <div class="col-lg-4 col-md-12 mb-4">
-                        <div class="bg-image  ">
+                        <Link to = "/mens"><div class="bg-image  ">
                             <img src="https://th.bing.com/th/id/R.1afb934bd5fa5876b38904a179545344?rik=3OBTNG2hOyS0Yw&riu=http%3a%2f%2fthefashionisto.com%2fwp-content%2fuploads%2f2014%2f01%2farthur_gasjeans000.jpg&ehk=HkAfpcJHFCSxIT%2fn6On%2bJuaYoHzjUoQHSj4purWnsWk%3d&risl=&pid=ImgRaw&r=0"
                                 class="w-100" />
                             <a href="#!">
@@ -21,7 +21,7 @@ export default function best() {
                                     <div class="mask" style={{ backgroundColor: " rgba(253, 253, 253, 0.15)" }}></div>
                                 </div>
                             </a>
-                        </div>
+                        </div></Link>
                     </div>
 
                     <div class="col-lg-4 col-md-6 mb-4">
@@ -61,10 +61,10 @@ export default function best() {
 
                 <div class="row">
                     <div class="col-lg-4 col-md-12 mb-4">
-                        <div class="bg-image ">
+                    <Link to = "/electronic"><div class="bg-image ">
                             <img src="https://th.bing.com/th/id/R.d179b175a170478d6ce023173fd0a34d?rik=ouA8H4Oc0POjDQ&riu=http%3a%2f%2fs3.amazonaws.com%2fdigitaltrends-uploads-prod%2f2017%2f09%2f36-Inch_Refrigerator-ed1e9f59945087b18e0a17710f95488a.jpg&ehk=hUow1nwDGEf%2bsTzjDOn1tyh5rLq3Ivg1ykZ%2bJ4iYOco%3d&risl=&pid=ImgRaw&r=0"
                                 class="w-100" />
-                            <a href="#!">
+                            <a href="/">
                                 <div class="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.3" }}>
                                     <div class="d-flex justify-content-start align-items-start h-100">
                                         <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">Electronic's</span></h5>
@@ -74,7 +74,7 @@ export default function best() {
                                     <div class="mask" style={{ backgroundColor: " rgba(253, 253, 253, 0.15)" }}></div>
                                 </div>
                             </a>
-                        </div>
+                        </div></Link>
                     </div>
 
                     <div class="col-lg-4 col-md-6 mb-4">
