@@ -39,7 +39,8 @@ const CartItems = () => {
               <div class="col-10">
 
                 <div class="d-flex justify-content-between align-items-center mb-4">
-                  <h3 class="fw-normal mb-0 text-black mx-auto" style={{ fontFamily: "monospace", fontSize: "40px" }}>Cart Summary</h3>
+                  <h3 class="fw-normal mb-0 text-black mx-auto" style={{ fontFamily: "monospace", fontSize: "40px" }}>Cart Summary
+                  </h3>
 
                 </div>
               </div>
@@ -51,7 +52,7 @@ const CartItems = () => {
             return (
               <>
 
-                <section class="h-100" style={{ backgroundColor: "#eee" }}>
+                <section class="h-100" style={{ backgroundColor: "#eee", }} >
                   <div class="container h-100 py-5">
                     <div class="row d-flex justify-content-center align-items-center h-100">
                       <div class="col-10">
@@ -60,7 +61,7 @@ const CartItems = () => {
 
                         <div class="card rounded-3 mb-4">
                           <div class="card-body p-4">
-                            <div class="row d-flex justify-content-between align-items-center">
+                            <div class="row d-flex justify-content-between align-items-center" >
                               <div class="col-md-2 col-lg-2 col-xl-2">
                                 <img
                                   src={value.items.url}
@@ -150,7 +151,7 @@ const CartItems = () => {
                             <div class="col-12 col-xl-6">
                               <div class="form-outline mb-4 mb-xl-5">
                                 <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
-                                  placeholder="John Smith" />
+                                  placeholder="MAGVA" />
                                 <label class="form-label" for="typeName">Name on card</label>
                               </div>
 

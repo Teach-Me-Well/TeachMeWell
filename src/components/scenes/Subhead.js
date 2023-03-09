@@ -57,9 +57,9 @@ export default function Subhead() {
                                     <li className="sub-menu-title">
                                         <a href="#" className="dropdown-item">Microphone</a>
                                     </li>
-                                    <li className="menu-title">
+                                    <Link to="/mens"> <li className="menu-title">
                                         <a href="#" className="dropdown-item">Men's</a>
-                                    </li>
+                                    </li></Link>
 
                                     <li className="sub-menu-title">
                                         <a href="#" className="dropdown-item">Formal</a>

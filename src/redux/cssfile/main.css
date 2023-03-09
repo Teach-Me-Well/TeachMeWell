@@ -538,6 +538,11 @@ h1 {
     height: 16em;
     object-fit: scale-down;
   }
+  .product--image-2 {
+    width: 150px;
+    height: 16em;
+    object-fit: scale-down;
+  }
  
   .card-1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
