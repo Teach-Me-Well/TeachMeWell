@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import mens from "../../assets/images/mens.jpg"
+import electronics from "../../assets/images/electronics.jpg"
+import footwear from "../../assets/images/footwear.jpg"
 export default function best() {
     return (
         <section style={{ backgroundColor: "#eee" }}>
@@ -9,7 +12,7 @@ export default function best() {
                 <div class="row">
                     <div class="col-lg-4 col-md-12 mb-4">
                         <Link to = "/mens"><div class="bg-image  ">
-                            <img src="https://th.bing.com/th/id/R.1afb934bd5fa5876b38904a179545344?rik=3OBTNG2hOyS0Yw&riu=http%3a%2f%2fthefashionisto.com%2fwp-content%2fuploads%2f2014%2f01%2farthur_gasjeans000.jpg&ehk=HkAfpcJHFCSxIT%2fn6On%2bJuaYoHzjUoQHSj4purWnsWk%3d&risl=&pid=ImgRaw&r=0"
+                            <img src={mens}
                                 class="w-100" />
                             <a href="#!">
                                 <div class="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.3" }}>
@@ -43,7 +46,7 @@ export default function best() {
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="bg-image ">
-                            <img src="https://m.media-amazon.com/images/I/71dVR8c96DL._UY695_.jpg"
+                            <img src={footwear}
                                 class="w-100" height="301px"/>
                             <a href="#!">
                                 <div class="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.3" }}>
@@ -62,7 +65,7 @@ export default function best() {
                 <div class="row">
                     <div class="col-lg-4 col-md-12 mb-4">
                     <Link to = "/electronic"><div class="bg-image ">
-                            <img src="https://th.bing.com/th/id/R.d179b175a170478d6ce023173fd0a34d?rik=ouA8H4Oc0POjDQ&riu=http%3a%2f%2fs3.amazonaws.com%2fdigitaltrends-uploads-prod%2f2017%2f09%2f36-Inch_Refrigerator-ed1e9f59945087b18e0a17710f95488a.jpg&ehk=hUow1nwDGEf%2bsTzjDOn1tyh5rLq3Ivg1ykZ%2bJ4iYOco%3d&risl=&pid=ImgRaw&r=0"
+                            <img src={electronics}
                                 class="w-100" />
                             <a href="/">
                                 <div class="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.3" }}>

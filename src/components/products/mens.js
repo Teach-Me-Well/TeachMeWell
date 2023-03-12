@@ -15,7 +15,7 @@ import { productData3 } from "./data3";
 import { productData4 } from "./data3";
 import { productData5 } from "./data3";
 import { productData6 } from "./data3";
-
+import jeans from "../../assets/images/jeans.jpg"
 import "../../redux/cssfile/main.css"
 import Men from "../../assets/mens.png"
 import {
@@ -167,7 +167,7 @@ export default function App() {
                                     <p class="lead mb-0">Today's Offer</p>
 
                                 </div>
-                                <img src="https://th.bing.com/th/id/R.6804b1249d9aaae99bee2615a34cd220?rik=UNf5GYcid4IGQg&riu=http%3a%2f%2fimages.koovscdn.com%2fuploads%2fproducts%2f49359_592061231a0f83b944b5274e95c52fe8_image1_zoom.jpg&ehk=8jFjWxwPjm%2flZL322LpPgnnEo9crS6EkLkqjMKi0cNc%3d&risl=&pid=ImgRaw&r=0"
+                                <img src={jeans}
                                     class="card-img-top" alt="Laptop" style={{ height: "400px" }} />
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between">

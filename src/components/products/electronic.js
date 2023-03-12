@@ -14,6 +14,7 @@ import { productData2 } from "./data2";
 import { productData3 } from "./data2";
 import { productData4 } from "./data2";
 import "../../redux/cssfile/main.css"
+import electronics from "../../assets/images/electronics.jpg"
 import Electronic from "../../assets/electronic.png"
 import {
   MDBFooter,
@@ -270,7 +271,7 @@ export default function App() {
                     <div class="row">
                         <div class="col-lg-4 col-md-12 mb-4">
                             <div class="bg-image ">
-                                <img src="https://th.bing.com/th/id/R.d179b175a170478d6ce023173fd0a34d?rik=ouA8H4Oc0POjDQ&riu=http%3a%2f%2fs3.amazonaws.com%2fdigitaltrends-uploads-prod%2f2017%2f09%2f36-Inch_Refrigerator-ed1e9f59945087b18e0a17710f95488a.jpg&ehk=hUow1nwDGEf%2bsTzjDOn1tyh5rLq3Ivg1ykZ%2bJ4iYOco%3d&risl=&pid=ImgRaw&r=0"
+                                <img src={electronics}
                                     class="w-100" />
                                 <a href="#!">
                                     <div class="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.3" }}>
