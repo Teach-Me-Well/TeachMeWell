@@ -1246,3 +1246,48 @@ transform: scale(1.05) rotate(-1deg);
     rgba(187, 44, 44, 0.25) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
   }
+  .line1 {
+    width: 402px;
+    height: 1.8px;
+    margin-top: 19px;
+    margin-left: 562px;
+    background-color: #222222;
+  }
+  .line2{
+    width: 188px;
+    height: 1.8px;
+    margin-top: 19px;
+    margin-left: 225px;
+    background-color: #222222;
+}
+.line3{
+  width: 188px;
+  height: 1.8px;
+  margin-top: 19px;
+  margin-left: 22px;
+  background-color: #222222;
+}
+.font{
+  margin-left: 198px;
+  position: absolute;
+  margin-top: -9px;
+  font-size: 12px;
+}
+.google1{
+  cursor: pointer;
+}
+.google1:hover{
+  opacity: 50%;
+}
+.apple:hover{
+  opacity: 50%;
+}
+.facebook:hover{
+  opacity: 50%;
+}
+.facebook{
+  cursor: pointer;
+}
+.apple{
+  cursor: pointer;
+}
