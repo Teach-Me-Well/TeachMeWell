@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../../redux/cssfile/main.css"
+import '../../styling/main.css';
 import { useSelector } from "react-redux";
 import { Link, useNavigate } from 'react-router-dom';
 import { signOut } from "firebase/auth";
