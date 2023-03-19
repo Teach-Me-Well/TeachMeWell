@@ -7,8 +7,11 @@ import Signin from "./components/account/signin";
 import Reset from "./components/account/reset"
 import Afterreset from "./components/account/afterreset"
 import Worngreset from "./components/account/worngreset"
+import { Provider } from "react-redux";
+import store from "../src/Store";
 function App() {
   return (
+<Provider store={store}>
     <BrowserRouter>
              {" "}
       <Routes>
@@ -20,6 +23,7 @@ function App() {
         <Route path="/worngreset" element={<Worngreset />} />
       </Routes>
     </BrowserRouter>  
+    </Provider>
 );}
 
 export default App;

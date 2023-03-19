@@ -38,7 +38,7 @@ const Login = () => {
       .then((userCredential) => {
         // Signed in
         // const user = userCredential.user;
-        if (user.emailVerified) {
+        if (user.emailVerified == true) {
           navigate("/");
           toast("SignIn Successfull");
         } else {

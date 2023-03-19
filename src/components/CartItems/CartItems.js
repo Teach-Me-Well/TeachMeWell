@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import "../../redux/cssfile/main.css";
+import "../../styling/main.css";
 import { Link } from "react-router-dom";
-import { deleteFromCart } from "../../redux/cart/cartAction";
-import Logo from "../../assets/logo.png";
-import Load from "../../assets/load.png";
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase/firebase-service";
 import { onAuthStateChanged } from "firebase/auth";
@@ -44,10 +41,7 @@ const CartItems = () => {
   const state = useSelector((state) => state.cartReducer);
   console.log(state);
   const dispatch = useDispatch();
-  const deleteItem = (id) => {
-    console.log(id);
-    dispatch(deleteFromCart(id));
-  };
+
   const subTotal = state.cartData.reduce(
     (accumulator, current) => accumulator + current.items.price,
     0
@@ -67,11 +61,11 @@ const CartItems = () => {
             <a className="navbar-brand mx-auto " href="#">
               <Link to="/">
                 <img
-                  src={Logo}
+                 
                   height="auto"
                   width="303px"
                   style={{ margin: "-7rem" }}
-                  alt="magva logo"
+                  alt="teachmewell logo"
                 />
               </Link>
             </a>
@@ -127,8 +121,7 @@ const CartItems = () => {
 
                               <div class="col-md-1 col-lg-1 col-xl-1 text-end">
                                 <a
-                                  href="#!"
-                                  onClick={() => deleteItem(value.items.id)}
+                                
                                   class="gradient-custom-5"
                                 >
                                   Remove
@@ -222,7 +215,7 @@ const CartItems = () => {
                                   id="typeName"
                                   class="form-control form-control-lg"
                                   siez="17"
-                                  placeholder="MAGVA"
+                                  placeholder="Teachmewell"
                                 />
                                 <label class="form-label" for="typeName">
                                   Name on card
@@ -361,12 +354,12 @@ const CartItems = () => {
                       <div className="card-body p-md-5 mx-md-4">
                         <div className="text-center">
                           <img
-                            src={Logo}
+                       
                             style={{ width: "303px", margin: "-103px" }}
                             alt="logo"
                           />
                           <img
-                            src={Load}
+
                             alt="logo"
                             style={{ width: "-webkit-fill-available" }}
                           />

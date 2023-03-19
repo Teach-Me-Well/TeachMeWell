@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 const Reset = () => {
     const navigate = useNavigate();
     const Reset = async () => {
-        navigate("/signin");
+        navigate("/signup");
       };
 
   return (
@@ -51,7 +51,7 @@ const Reset = () => {
                           marginLeft:"-143px"
                         }}
                         >
-                          Continue Login
+                          Continue Sign up
                         </button>
                         </div>
                  </div>
