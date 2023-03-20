@@ -59,6 +59,7 @@ const Navbar = () => {
         <div>
           <div>
             <div
+            
               style={{
                 color: "white",
                 marginTop: "-51px",
@@ -67,7 +68,7 @@ const Navbar = () => {
                 marginLeft: "338px",
               }}
             >
-              Quiz
+              <h className="text">Quiz</h>
             </div>
             <div
               style={{
@@ -79,7 +80,7 @@ const Navbar = () => {
                 marginLeft: "440px",
               }}
             >
-              Resources
+               <h className="text">Resources</h>
             </div>
             <div
               style={{
@@ -91,7 +92,7 @@ const Navbar = () => {
                 marginLeft: "595px",
               }}
             >
-              community
+               <h className="text">Community</h>
             </div>
             <div
               style={{
@@ -103,16 +104,16 @@ const Navbar = () => {
                 marginLeft: "772px",
               }}
             >
-              Cares
+               <h className="text">Cares</h>
             </div>
           </div>
           {isUserLoggedIn ? (
             <a
-              class="btn btn-primary"
-              style={{ cursor: "pointer", marginLeft: "1441px" }}
+              class="btn-hover color-10"
+              style={{ cursor: "pointer", marginLeft: "1309px",marginTop:"-53px",position:"absolute" ,width:"127px",textDecoration:"none"}}
               onClick={handleLogout}
             >
-              Logout
+              <h style={{marginTop:"13px",position:"absolute" ,marginLeft:"-22px"}}>Logout</h>
             </a>
           ) : (
             <div>

@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styling/index.css';
-import './styling/main.css';
+import '../src/styling/index.css';
 import App from './App';
-import reportWebVitals from './components/firebase/reportWebVitals';
+import reportWebVitals from '../src/components/firebase/reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

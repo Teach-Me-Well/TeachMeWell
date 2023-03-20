@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../scenes/Navbar";
 import Subhead from "../scenes/subhead";
-
+import "../../styling/main.css"
 const Home = () => {
 
   return (
@@ -15,16 +15,16 @@ const Home = () => {
         }
       }><div>
         <div>
-        <button class="btn btn-primary" style={{marginTop:"140px", marginLeft: "35px",width:"150px" ,textAlign: "center"}}>Start coding</button>
+        <button class="gradient-hover-effect" style={{marginTop:"170px", marginLeft: "35px",width:"170px" ,textAlign: "center",borderRadius:"32px"}}>Start coding</button>
         </div>
         <div style={{color:"white" ,marginTop:"30px", fontSize:"26px", marginLeft: "-31px", textAlign: "center"}}>
-          Search 
+        <h className="text">Search</h> 
         </div>
         <div style={{color:"white" ,marginTop:"30px", fontSize:"26px", marginLeft: "-31px", textAlign: "center"}}>
-        Challenges
+        <h className="text">Challenges</h>
         </div>
         <div style={{color:"white" ,marginTop:"30px", fontSize:"26px", marginLeft: "-31px", textAlign: "center"}}>
-          Sparks
+        <h className="text">Sparks</h>
         </div>
         </div>
       </div>

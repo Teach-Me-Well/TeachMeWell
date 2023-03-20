@@ -1252,8 +1252,131 @@
   border: 2px solid #353d42;
   }
   .text{
-    font-size: "26px"
+    font-size: "26px";
+    cursor: pointer;
   }
   .text:hover{
-    color: rgb(0, 0, 0);
+    color: rgb(82, 81, 81);
   }
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+  .btn-hover.color-10 {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+
+}
+.gradient-hover-effect {
+  display: flex;
+  padding: 0.875em 2em;
+  background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+  font-family: inherit;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 1s;
+  place-content: center;
+}
+.gradient-hover-effect:hover, .gradient-hover-effect:focus {
+  background-color: #e91e63;
+  color: #fff;
+}
+
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  min-width: 0;
+  padding: 9px;
+  margin: 7px;
+  border: 0;
+  margin-left: 77px;
+  vertical-align: top;
+}
+.label-1
+{
+  margin-left: 85px;
+  margin-top: 28px;
+
+}
+* {
+  box-sizing: border-box;
+}
+.wrapper{
+    display:flex;
+    background: #333;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    height: 220px;
+    width: 500px;
+     border-radius: 20px;
+}
+
+/* DEMO-SPECIFIC STYLES */
+ h1 {
+  color: palevioletred;
+  font-family: monospace;
+  border-right: .15em solid #fff; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  padding-right:00px;
+  letter-spacing: .15em;
+  animation: blink .5s step-end infinite alternate;;
+}
+
+
+
+/* The typewriter cursor effect */
+@keyframes blink {
+  50% { border-color: transparent}
+}
+
+/* #type_effect{
+  height:200px;
+  width:300px;
+  color: red;
+} */
