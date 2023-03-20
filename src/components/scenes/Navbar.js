@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase/firebase-service";
 import { onAuthStateChanged } from "firebase/auth";
-import { height } from "@mui/system";
+import Logo from "../logo.png";
 // import Cart from "../src/components/CartItems/CartItems";
 const Navbar = () => {
   const state = useSelector((state) => state.cartReducer);
@@ -49,13 +49,63 @@ const Navbar = () => {
       <div
         className="card"
         style={{
-          backgroundColor: "black",
+          backgroundColor: "#1e2225",
           width: "100%",
           height: "81px",
           marginTop: "-721px",
         }}
       >
+        <img src={Logo} style={{ width: "240px", marginTop: "14px" }} />
         <div>
+          <div>
+            <div
+              style={{
+                color: "white",
+                marginTop: "-51px",
+                fontSize: "26px",
+                position: "absolute",
+                marginLeft: "338px",
+              }}
+            >
+              Quiz
+            </div>
+            <div
+              style={{
+                color: "white",
+                marginTop: "26px",
+                fontSize: "26px",
+                position: "absolute",
+                marginTop: "-51px",
+                marginLeft: "440px",
+              }}
+            >
+              Resources
+            </div>
+            <div
+              style={{
+                color: "white",
+                /*marginTop: 30px; */
+                fontSize: "26px",
+                position: "absolute",
+                marginTop: "-51px",
+                marginLeft: "595px",
+              }}
+            >
+              community
+            </div>
+            <div
+              style={{
+                color: "white",
+                /*marginTop: 30px; */
+                fontSize: "26px",
+                position: "absolute",
+                marginTop: "-51px",
+                marginLeft: "772px",
+              }}
+            >
+              Cares
+            </div>
+          </div>
           {isUserLoggedIn ? (
             <a
               class="btn btn-primary"
@@ -66,25 +116,27 @@ const Navbar = () => {
             </a>
           ) : (
             <div>
-              <Link to="/signin">
-                <a
-                  href="#"
-                  className="btn btn-primary"
-                  style={{ marginLeft: "1355px" }}
-                >
-                  Sign-in
-                </a>
-              </Link>
+              <a
+                href="/signin"
+                className="btn btn-primary"
+                style={{ marginLeft: "1314px", marginTop: "-62px",width: "85px"}}
+              >
+                Sign-in
+              </a>
+
               <a></a>
-              <Link to="/signup">
-                <a
-                  href="#"
-                  className="btn btn-primary"
-                  style={{ marginLeft: "1441px", marginTop: "-94px" }}
-                >
-                  Sign-up
-                </a>
-              </Link>
+
+              <a
+                href="/signup"
+                className="btn btn-primary"
+                style={{
+                  marginLeft: "1418px",
+                  marginTop: "-109px",
+                  width: "85px",
+                }}
+              >
+                Sign-up
+              </a>
             </div>
           )}
         </div>

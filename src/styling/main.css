@@ -1246,4 +1246,14 @@
   .facebook:hover{
     opacity: 1;
     }
-  
+  .button4:hover{
+   background-color: #91a2b3;
+  color: black;
+  border: 2px solid #353d42;
+  }
+  .text{
+    font-size: "26px"
+  }
+  .text:hover{
+    color: rgb(0, 0, 0);
+  }

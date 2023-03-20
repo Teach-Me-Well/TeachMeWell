@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "../scenes/Navbar";
+import Subhead from "../scenes/subhead";
+
 const Home = () => {
 
   return (
     <div style={{marginTop:"-2rem"}}>
       <div className="card" style={
         {
-          backgroundColor:"black",
+          backgroundColor:"#1e2225",
           width:"247px",
           height:"721px"
 
@@ -27,6 +29,7 @@ const Home = () => {
         </div>
       </div>
     <Navbar /> 
+    <Subhead />
     </div>
   );
 };
