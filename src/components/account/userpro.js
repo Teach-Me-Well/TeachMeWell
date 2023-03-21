@@ -108,12 +108,12 @@ const UserProfile = () => {
               console.log(base64StringImage);
               // Set image preview
               if (base64StringImage) {
-                let imagePreviewElement: any =
+                let imagePreviewElement/*: any */=
                   document.getElementById("image-preview");
                 imagePreviewElement.src = base64StringImage;
                 // Set state
                 if (typeof base64StringImage === "string") {
-                  let base64ImageWithoutPrefix: string =
+                  let base64ImageWithoutPrefix/*:string*/=
                     base64StringImage.split(",")[1];
                   console.log(base64ImageWithoutPrefix);
                   // Set state here

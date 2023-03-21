@@ -1,29 +1,19 @@
 import React from "react"; 
+import Typewriter from "typewriter-effect";
 import "../../styling/main.css"
-const Type = () => {
-    console.clear();
-    function typingEffect(element,speed){
-      let text=element.innerHTML;
-      element.innerHTML="";
-     let i=0;
-      let timer=setInterval(function(){
-        if(i<text.length){
-          element.append(text.charAt(i))
-          i++;
-        }else{
-          clearInterval(timer);
-        }
-      },speed)
-      
-    }
 
     
-      return (
-        <div>
-          <div className="wrapper">
-            <h1 onChange={typingEffect("h1",25)}>CSS</h1>
-          </div> 
-        </div>
-      );
-    }
+    function Type() {
+        return (
+          <div className="Type_card">
+            <Typewriter
+             onInit={(typewriter)=> {
+             typewriter
+             .typeString("Css")
+             .pauseFor(1000)
+             }}
+             />
+          </div>
+        );
+      }
     export default Type

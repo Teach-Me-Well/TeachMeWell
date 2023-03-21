@@ -52,7 +52,7 @@ const Navbar = () => {
           backgroundColor: "#1e2225",
           width: "100%",
           height: "81px",
-          marginTop: "-721px",
+          marginTop: "-1471px",
         }}
       >
         <img src={Logo} style={{ width: "240px", marginTop: "14px" }} />

@@ -1282,7 +1282,7 @@
     background-size: 300% 100%;
 
     border-radius: 50px;
-    moz-transition: all .4s ease-in-out;
+    /* moz-transition: all .4s ease-in-out; */
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -1290,7 +1290,7 @@
 
 .btn-hover:hover {
     background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
+    /* moz-transition: all .4s ease-in-out; */
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -1346,28 +1346,43 @@
   box-sizing: border-box;
 }
 .wrapper{
-    display:flex;
-    background: #333;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    height: 220px;
-    width: 500px;
-     border-radius: 20px;
+  display: flex;
+  /* background: #333; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 39px;
+  width: 104px;
+  border-radius: 20px;
+  font-size: 0px;
 }
 
+.Type_card{
+  display: flex;
+  /* background: #333; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 39px;
+  width: 104px;
+  border-radius: 20px;
+  font-size: 0px;
+}
 /* DEMO-SPECIFIC STYLES */
  h1 {
   color: palevioletred;
   font-family: monospace;
-  border-right: .15em solid #fff; 
+  /* border-right: .15em solid #fff; 
   white-space: nowrap; 
   margin: 0 auto; 
   padding-right:00px;
-  letter-spacing: .15em;
-  animation: blink .5s step-end infinite alternate;;
-}
-
+  letter-spacing: .15em; */
+  font-size: 1.2rem;
+  margin-left: 110px;
+  
+  /* animation: blink .5s step-end infinite alternate;;
+} */
+ }
 
 
 /* The typewriter cursor effect */
@@ -1380,3 +1395,13 @@
   width:300px;
   color: red;
 } */
+.card1:hover{
+  transform: scale(1.1);
+}
+.card1{
+  cursor: pointer;
+  transition: transform .2s; 
+/* -webkit-transition-property: all; 
+-webkit-transition-duration: 0.3s; 
+-webkit-transition-timing-function: ease; */
+}

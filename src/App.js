@@ -11,7 +11,8 @@ import { Provider } from "react-redux";
 import store from "../src/Store";
 import User from "../src/components/account/userpro"
 import Ide from "../src/index1"
-import Type from "../src/components/account/typewritter"
+// import Quiz from "../../TeachMeWell/quiz/src/App"
+// import Type from "../src/components/account/typewritter"
 function App() {
   return (
 <Provider store={store}>
@@ -26,7 +27,7 @@ function App() {
         <Route path="/worngreset" element={<Worngreset />} />
         <Route path="/user" element={<User />} />
         <Route path="/ide" element={<Ide />} />
-        <Route path="/type" element={<Type />} />
+        {/* <Route path="/quiz" element={<Quiz />} /> */}
       </Routes>
     </BrowserRouter>  
     </Provider>
